@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+body {
+  font-family: 'Fredoka One', cursive;
+  background-color: #c1c5da;
+}
+
+#selection-mascota {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.titulo {
+  color: #213363;
+  font-size: 32px;
+}
+
+.subtitulo {
+  color: #213363;
+  font-size: 25px;
+}
+
+.tarjetas {
+  display: flex;
+  gap: 10px;
+  flex-direction: row;
+}
+
+.tarjeta-de-mokepon {
+  width: 180px;
+  height: 100px;
+  background: #17594A;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+} 
+
+button {
+    font-family: 'Fredoka One', cursive;
+    width: 100px;
+    height: 50px;
+    background: #8dac5096;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: 10px;
+}
+
+.botonR {
+    font-family: 'Fredoka One', cursive;
+    width: 180px;
+    height: 50px;
+    background: #8EAC50;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: 10px;
+ 
+}
+
+.tarjeta-de-mokepon img {
+  width: 80px;
+}
+
+input {
+  display: none;
+}
+
+input:checked + label {
+    background-color: #213363;
+}
+
+label:hover {
+    background-color: #405ba7;
+}
+
+button  :hover {
+    background-color: #405ba7;
+}
+
+#seccion-batalla{
+    flex-direction: column;
+    align-items: center;
+}
+
+#mensajes{
+    width: 280px;
+    background: #D3D04F;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tablas{
+    display: grid;
+    grid-template-columns: 100px 100px;
+}
+
+.subtablas {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media (max-width: 360px) {
+    .tarjetas {
+        flex-direction: column;
+    }
+}
