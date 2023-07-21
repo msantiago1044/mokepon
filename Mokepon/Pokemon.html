@@ -14,6 +14,16 @@
             </div>
             <button id="mascota">Seleccionar</button>
         </section>
+        <section id="ver-mapa">
+            <h2 class="subtitulo"> Recorre el mapa con tu MOKEPON</h2>
+            <canvas id="mapa"></canvas>
+            <button id="direccion" onmouseup="detenerMovimiento()" onmousedown="moverMokeponUp()">⬆️</button>
+            <div id="direccion">
+                <button id="direccion" onmouseup="detenerMovimiento()" onmousedown="moverMokeponLeft()">⬅️</button>
+                <button id="direccion" onmouseup="detenerMovimiento()" onmousedown="moverMokeponDown()">⬇️</button>
+                <button id="direccion" onmouseup="detenerMovimiento()" onmousedown="moverMokeponRight()">➡️</button>
+            </div>
+        </section>
         <section id="seccion-batalla">
             <h1 class="titulo"> MOKEPON!</h1>
             <h2 class="subtitulo">Elige tu ataque</h2>
@@ -38,6 +48,6 @@
                 </div>
             </div>
         </section> 
-        <script src="./js/codigo.js"></Script>          
+        <script src="./js/codigo.js"></Script>
     </body>
 </html>
